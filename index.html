@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Splitter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./images/logo.svg" alt="splitter logo" class="logo">
+        </header>
+        <main>
+            <div class="left-col">
+                <div class="bill-section">
+                    <label for="total-bill-input">Bill</label>
+                    <div>
+                        <img src="./images/icon-dollar.svg" alt="" class="input-icon">
+                        <input id="total-bill-input" type="text" class="large-input" placeholder="0" maxlength="9">
+                    </div>    
+                </div>
+
+                <div class="tip-section">
+                    <label for="custom-tip-input">Select Tip %</label>
+                    <div class="tip-select">
+                        <button id="button5" class="tip-button" data-tip="5">5%</button>
+                        <button id="button10" class="tip-button" data-tip="10">10%</button>
+                        <button id="button15" class="tip-button" data-tip="15">15%</button>
+                        <button id="button25" class="tip-button" data-tip="25">25%</button>
+                        <button id="button50" class="tip-button" data-tip="50">50%</button>
+                        <input id="custom-tip-input" type="text" class="small-input" placeholder="Custom" maxlength="3">
+                    </div>
+                </div>
+
+
+                <div class="people-section">
+                    <label for="people-input">Number of People</label>
+                    <div>
+                        <img src="./images/icon-person.svg" alt="" class="input-icon">
+                        <input id="people-input" type="text" class="large-input" placeholder="0" maxlength="3">
+                    </div>   
+                </div>
+            </div>
+
+
+            <div class="right-col">
+                <div class=".right-col__top">
+                    <div class="flex-between">
+                        <div>
+                            <p class="right-col__p">Tip Amount</p>
+                            <p class="right-col__p-small">/ person</p>
+                        </div>
+                        <p id="result-tip-amount" class="result">$0.00</p>
+                    </div>
+
+                    <div class="flex-between">
+                        <div>
+                            <p class="right-col__p">Total</p>
+                            <p class="right-col__p-small">/ person</p>
+                        </div>
+                        <p id="result-total-amount" class="result">$0.00</p>
+                    </div>
+                    
+                </div>
+
+                <button class="reset-button">RESET</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
